@@ -1,0 +1,61 @@
+/* GRID 1 WORKS IN FIREFOX AND SAFARI BUT NOT CHROME */
+.portfolio-grid img {
+  max-width: 100%;
+  max-height:100%;
+}
+
+.portfolio-grid { 
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  align-items: stretch;
+  }
+
+.portfolio-grid a {
+  line-height: 0;
+}
+
+/* GRID 2 works fine without links. Links to images mess formatting*/
+/* HTML with links:
+<main>
+    <div id="container">
+      <div id="main">
+        <div class="portfolio">
+          <div><a href="BlairDunlopFiftyShadesOfBlue.html"><img src="img/Blair-Dunlop-Fifty-Shades-of-Blue-TN-600x600.jpg"/></a></div>
+          <div><a href="#"><img src="img/James-Flannigan-Yeah-Yeah-TN-600x600.jpg"/></a></div>
+          <div><a href="#"><img src="img/Blair-Dunlop-Web-Design-TN1-600x600.jpg"/></a></div>
+          <div><a href="#"><img src="img/Apollo-Gets-the-Girl-New-Dawn-Remix-TN-600x600.jpg"/></a></div>
+          <div><a href="#"><img src="img/Carys-Calling-Soaked-My-Skin-TN-600x600.jpg"/></a></div>
+          <div><a href="#"><img src="img/Chromatone-Web-Design-TN-600x600.jpg"/></a></div>
+          <div><a href="#"><img src="img/Island-Records-Web-Design-TN-600x600.jpg"/></a></div>
+          <div><a href="#"><img src="img/Detroit-9000-Taking-Back-My-Life-TN-600x600.jpg"/></a></div>
+          <div><a href="#"><img src="img/MJFitz-Logo-Design-TN-600x600.jpg"/></a></div>
+          <div><a href="#"><img src="img/Crystal-Fighters-TN-600x600.jpg"/></a></div>
+          <div><a href="#"><img src="img/Swansfield-Music-Branding-TN-600x600.jpg"/></a></div>
+          <div><a href="#"><img src="img/umi-Yours-TN-600x600.jpg"/></a></div>
+        </div>
+      </div>
+    </div>  
+  </main>
+
+css:
+.portfolio-grid > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.portfolio-grid > div > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.portfolio-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-auto-rows: repeat(auto-fit, minmax(350px, 1fr));
+  grid-auto-flow: dense;
+}
+*/
+
+
